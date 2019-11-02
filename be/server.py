@@ -2,9 +2,14 @@
 
 import os
 import traceback
+import requests
 
 from flask import Flask, jsonify, request, send_file, send_from_directory
 from flask_cors import CORS
+
+import io
+
+from PIL import Image, ImageDraw
 
 app = Flask(__name__)
 CORS(app)
@@ -62,14 +67,19 @@ def handle_resource():
 def get_resource(rid):
     print("Resource ID = ", rid)
 
-    """
     try:
+        imgb = requests.get('http://localhost:5000/resource?rid={}'.format(rid)).content;
+        stream = io.BytesIO(imgb)
+        img = Image.open(stream)
+        img.save("test.png")
+        return jsonify({
+            "success": True,
+        })
     except Exception as e:
         traceback.print_exc()
         return jsonify({
             "error_msg": "fail to get a resource for {}: {}".format(rid, e)
         })
-    """
 
 
 if __name__ == "__main__":
