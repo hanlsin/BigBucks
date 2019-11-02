@@ -1,12 +1,12 @@
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Aa]uto[Bb]uild/
+**/[Ll]ibrary/
+**/[Tt]emp/
+**/[Oo]bj/
+**/[Bb]uild/
+**/[Bb]uilds/
+**/[Aa]uto[Bb]uild/
 
-.vscode/
-.vs/
+**/.vscode/
+**/.vs/
 
 *.csproj
 *.sln
@@ -14,13 +14,11 @@
 *.tmp
 *.userprefs
 *.app
-.idea/
+**/.idea/
 *.VC.*
-.DS_Store
+**/.DS_Store
 *~
 *.swp
 
 *.log
 *.pyc
-
-/.idea/
