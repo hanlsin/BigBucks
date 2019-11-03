@@ -4,6 +4,7 @@
 **/[Bb]uild/
 **/[Bb]uilds/
 **/[Aa]uto[Bb]uild/
+**/[Bb]uild [Vv]ersions/
 
 **/.vscode/
 **/.vs/
