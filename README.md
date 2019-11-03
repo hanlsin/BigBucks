@@ -24,7 +24,7 @@ python server.py
 ```
 
 ## Frontend
-Currently, the frontend is just a individual html file. So, click the `upload.html` or open the file on any browser.
+Currently, the frontend is just a individual html file. So, open the `upload.html` file on any browser.
 
 ### Input fields
 * resource ID
